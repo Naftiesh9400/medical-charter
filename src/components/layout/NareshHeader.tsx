@@ -10,7 +10,7 @@ const navbarLinks = [
   { id: 5, name: "Naresh", path: "/naresh", newTab: true },
 ];
 
-const Header = () => {
+const NareshHeader = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
@@ -70,8 +70,8 @@ const Header = () => {
           {/* Using GraduationCap as placeholder for logo */}
           <GraduationCap className="h-[35px] w-[40px] text-[#0C50E3]" />
           <div className="flex flex-col items-center gap-[6px]">
-            <p className="text-[#0C50E3] w-[41.15px] text-[16px] font-bold leading-none">
-              EMS
+            <p className="text-[#0C50E3] text-[16px] font-bold leading-none">
+              Naresh
             </p>
           </div>
         </Link>
@@ -228,4 +228,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NareshHeader;
