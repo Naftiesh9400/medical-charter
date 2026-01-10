@@ -7,7 +7,7 @@ const navbarLinks = [
   { id: 2, name: "Program", path: "#program" },
   { id: 3, name: "Methodology", path: "#methodology" },
   { id: 4, name: "Contact", path: "#forms" },
-  { id: 5, name: "Naresh", path: "/naresh", newTab: true },
+  { id: 5, name: "Naresh", path: "/naresh" },
 ];
 
 const Header = () => {
