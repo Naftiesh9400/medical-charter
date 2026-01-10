@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/playfair-display/500.css';
+@import '@fontsource/playfair-display/600.css';
+@import '@fontsource/playfair-display/700.css';
+@import '@fontsource/source-sans-pro/300.css';
+@import '@fontsource/source-sans-pro/400.css';
+@import '@fontsource/source-sans-pro/600.css';
+@import '@fontsource/source-sans-pro/700.css';
+
+@layer base {
+  :root {
+    /* EMS Medical Charter - Academic Medical Theme */
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Deep Navy - Trust & Academia */
+    --primary: 217 71% 23%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Teal - Medical & Calm */
+    --secondary: 168 76% 32%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Warm Beige Muted */
+    --muted: 40 20% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Muted Gold Accent */
+    --accent: 43 74% 49%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 217 71% 23%;
+
+    --radius: 0.5rem;
+
+    /* Custom EMS Colors */
+    --navy-50: 214 47% 97%;
+    --navy-100: 214 41% 94%;
+    --navy-200: 214 38% 85%;
+    --navy-300: 215 36% 72%;
+    --navy-400: 216 40% 55%;
+    --navy-500: 217 55% 43%;
+    --navy-600: 217 71% 33%;
+    --navy-700: 217 71% 23%;
+    --navy-800: 218 64% 19%;
+    --navy-900: 219 54% 16%;
+
+    --teal-50: 166 76% 97%;
+    --teal-100: 167 76% 92%;
+    --teal-200: 168 76% 82%;
+    --teal-300: 168 76% 68%;
+    --teal-400: 168 76% 50%;
+    --teal-500: 168 76% 42%;
+    --teal-600: 168 76% 32%;
+    --teal-700: 168 72% 26%;
+    --teal-800: 169 68% 21%;
+    --teal-900: 170 66% 17%;
+
+    --gold-50: 48 100% 96%;
+    --gold-100: 46 100% 88%;
+    --gold-200: 45 96% 77%;
+    --gold-300: 44 93% 65%;
+    --gold-400: 43 90% 56%;
+    --gold-500: 43 74% 49%;
+    --gold-600: 38 72% 42%;
+    --gold-700: 32 65% 35%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(217 71% 23%) 0%, hsl(217 71% 33%) 50%, hsl(168 76% 32%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(214 47% 97%) 0%, hsl(210 20% 98%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(168 76% 32%) 0%, hsl(168 76% 42%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(217 71% 23% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(217 71% 23% / 0.1), 0 2px 4px -2px hsl(217 71% 23% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(217 71% 23% / 0.1), 0 4px 6px -4px hsl(217 71% 23% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(217 71% 23% / 0.1), 0 8px 10px -6px hsl(217 71% 23% / 0.1);
+    --shadow-glow: 0 0 40px hsl(168 76% 32% / 0.2);
+
+    /* Typography */
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Source Sans Pro', system-ui, sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 219 54% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 218 64% 14%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 218 64% 14%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 217 71% 23%;
+
+    --secondary: 168 76% 42%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 32% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 43 74% 49%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 32% 20%;
+    --input: 217 32% 20%;
+    --ring: 212 27% 84%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .gradient-section {
+    background: var(--gradient-section);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-md);
+  }
+
+  .shadow-card-hover {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Medical Pattern Background */
+  .medical-pattern {
+    background-image: 
+      radial-gradient(circle at 20% 80%, hsl(168 76% 32% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(217 71% 23% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsl(43 74% 49% / 0.03) 0%, transparent 30%);
+  }
+
+  /* Subtle grid pattern */
+  .grid-pattern {
+    background-image: 
+      linear-gradient(hsl(214 20% 90% / 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(214 20% 90% / 0.5) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Section divider */
+  .section-divider {
+    @apply w-20 h-1 rounded-full mx-auto;
+    background: var(--gradient-accent);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--navy-300));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--navy-400));
+}
