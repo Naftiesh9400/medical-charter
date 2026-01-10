@@ -22,7 +22,7 @@ const features = [
   }
 ];
 
-const NareshSection = () => {
+const PortfolioSection = () => {
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -39,7 +39,7 @@ const NareshSection = () => {
             Exclusive Content
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Welcome to <span className="text-teal-600">Naresh's Page</span>
+            Welcome to <span className="text-teal-600">Portfolio</span>
           </h2>
           <div className="section-divider mb-6" />
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
@@ -75,4 +75,4 @@ const NareshSection = () => {
   );
 };
 
-export default NareshSection;
+export default PortfolioSection;
