@@ -17,7 +17,7 @@ const mentors = [
     role: "Senior Mentor - Pathology",
     qualification: "MD (Pathology), KEM Mumbai",
     experience: "12+ Years",
-    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1659353888906-adb3e0041693?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW5kaWFuJTIwZG9jdG9yfGVufDB8fDB8fHww",
     bio: "Dr. Priya Sharma specializes in Pathology and has a unique approach to simplifying complex topics. Her visual teaching aids are highly appreciated by students preparing for competitive exams."
   },
   {
@@ -25,7 +25,7 @@ const mentors = [
     role: "Faculty - Surgery",
     qualification: "MS (General Surgery), JIPMER",
     experience: "10+ Years",
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop",
+    image: "https://st.depositphotos.com/58141582/52449/i/450/depositphotos_524490464-stock-photo-young-male-doctor-look-camera.jpg",
     bio: "Dr. Amit Patel brings practical surgical insights to the classroom. His case-based discussions help students understand clinical correlations effectively."
   },
   {
@@ -33,7 +33,7 @@ const mentors = [
     role: "Exam Strategy Expert",
     qualification: "FMGE Topper, DNB",
     experience: "8+ Years",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
+    image: "https://t3.ftcdn.net/jpg/01/14/89/28/360_F_114892812_Va0KWhvmSUOoYNEoHCAOJ8uYXzBiD8vY.jpg",
     bio: "Dr. Sneha Gupta, an FMGE topper herself, guides students on exam strategies, time management, and high-yield topic selection."
   }
 ];
