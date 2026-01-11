@@ -3,7 +3,7 @@ import NareshSection from "@/components/sections/NareshSection";
 
 const NareshPage = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background font-lexend">
       <NareshHeader />
       <main className="pt-[75px]">
         <NareshSection />

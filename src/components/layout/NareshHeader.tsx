@@ -65,7 +65,7 @@ const NareshHeader = () => {
   };
 
   return (
-    <>
+    <div className="font-lexend"> {/* Apply font to the entire component's output */}
       <nav className="flex justify-between items-center p-2 px-[42px] py-[15px] fixed top-0 left-0 w-full h-[75px] z-50 bg-white shadow-md">
         <div>
           <Link to="/" className="flex items-center gap-[9px] cursor-pointer">
@@ -229,8 +229,8 @@ const NareshHeader = () => {
           )}
         </div>
       </nav>
-      {isPortfolioOpen && <PortfolioViewer onClose={() => setIsPortfolioOpen(false)} />}
-    </>
+      {isPortfolioOpen && <PortfolioViewer onClose={() => setIsPortfolioOpen(false)} />} {/* This will now inherit the font from the wrapping div */}
+    </div>
   );
 };
 

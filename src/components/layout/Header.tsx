@@ -63,7 +63,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center p-2 px-[42px] py-[15px] fixed top-0 left-0 w-full h-[75px] z-50 bg-white shadow-md">
+    <nav className="flex justify-between items-center p-2 px-[42px] py-[15px] fixed top-0 left-0 w-full h-[75px] z-50 bg-white shadow-md font-lexend">
       <div>
         <Link to="/" className="flex items-center gap-[9px] cursor-pointer">
           {/* Using GraduationCap as placeholder for logo */}
